@@ -103,14 +103,14 @@ export default class AvatarsImages extends LitElement {
       max-height: 306px;
       flex-shrink: 0;
     }
+    .actions-content {
+      min-width: 50px;
+      min-height: 40px;
+    }
     .media-content {
       height: 200px;
       min-height: 200px;
       max-height: 200px;
-    }
-    .actions-content {
-      min-width: 50px;
-      min-height: 40px;
     }
     .list {
       height: max-content;
@@ -123,10 +123,21 @@ export default class AvatarsImages extends LitElement {
 
   render() {
     return html`
+      <link href='node_modules/@igniteui/material-icons-extended/styles/sprite.css' rel='stylesheet'>
       <link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet'>
       <link rel='stylesheet' href='../../ig-theme.css'>
       <div class="column-layout group">
         <div class="row-layout group_1">
+          <div class="column-layout group_2">
+            <div class="row-layout group_3">
+              <igc-avatar size="large" shape="circle" class="avatar"></igc-avatar>
+              <igc-avatar shape="rounded" size="medium" class="avatar"></igc-avatar>
+              <igc-avatar class="avatar"></igc-avatar>
+            </div>
+            <p class="typography__subtitle-2 text">
+              No image
+            </p>
+          </div>
           <div class="column-layout group_2">
             <div class="row-layout group_3">
               <igc-avatar src="/src/assets/a7f211be67afc061d9571f5b5b5236cd92420e0c.png" size="large" shape="circle" class="avatar"></igc-avatar>
@@ -203,15 +214,9 @@ export default class AvatarsImages extends LitElement {
         </div>
         <div class="row-layout group_4">
           <igc-card class="card">
-            <igc-card-media class="media-content">
-              <img src="/src/assets/start-building-dark.svg" class="image" />
-            </igc-card-media>
             <igc-card-header>
-              <div slot="thumbnail">
-                <igc-avatar src="/src/assets/Avatar13.png" size="large" shape="circle" class="avatar"></igc-avatar>
-              </div>
               <h3 slot="title">
-                Images from Assets
+                No image
               </h3>
               <h5 slot="subtitle">
                 Subtitle goes here...
@@ -238,6 +243,40 @@ export default class AvatarsImages extends LitElement {
                 <span class="material-icons">
                   share
                 </span>
+                <igc-ripple></igc-ripple>
+              </igc-icon-button>
+            </igc-card-actions>
+          </igc-card>
+          <igc-card class="card">
+            <igc-card-media class="media-content">
+              <img src="/src/assets/start-building-dark.svg" class="image" />
+            </igc-card-media>
+            <igc-card-header>
+              <div slot="thumbnail">
+                <igc-avatar src="/src/assets/Avatar13.png" size="large" shape="circle" class="avatar"></igc-avatar>
+              </div>
+              <h3 slot="title">
+                Images from Assets
+              </h3>
+              <h5 slot="subtitle">
+                Subtitle goes here...
+              </h5>
+            </igc-card-header>
+            <igc-card-actions class="actions-content">
+              <igc-button variant="flat" slot="start" size="large" class="button">
+                Button
+                <igc-ripple></igc-ripple>
+              </igc-button>
+              <igc-icon-button slot="end" variant="flat">
+                <span class="imx-icon imx-cement-mixer"></span>
+                <igc-ripple></igc-ripple>
+              </igc-icon-button>
+              <igc-icon-button slot="end" variant="flat">
+                <span class="imx-icon imx-bulldozer"></span>
+                <igc-ripple></igc-ripple>
+              </igc-icon-button>
+              <igc-icon-button slot="end" variant="flat">
+                <span class="imx-icon imx-brick-wall"></span>
                 <igc-ripple></igc-ripple>
               </igc-icon-button>
             </igc-card-actions>
@@ -285,6 +324,10 @@ export default class AvatarsImages extends LitElement {
         </div>
       </div>
       <div class="column-layout group">
+        <p class="typography__subtitle-2 text">
+          No image
+        </p>
+        <img class="image_1" />
         <p class="typography__subtitle-2 text">
           Image from Assets
         </p>
