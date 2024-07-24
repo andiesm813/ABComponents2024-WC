@@ -4,8 +4,8 @@ import { IgcCategoryChartModule } from '@infragistics/igniteui-webcomponents-cha
 import { ModuleManager } from '@infragistics/igniteui-webcomponents-core';
 import { defineComponents, IgcAccordionComponent, IgcAvatarComponent, IgcBadgeComponent, IgcButtonComponent, IgcButtonGroupComponent, IgcCalendarComponent, IgcCardComponent, IgcCheckboxComponent, IgcComboComponent, IgcDialogComponent, IgcExpansionPanelComponent, IgcIconButtonComponent, IgcIconComponent, IgcInputComponent, IgcListComponent, IgcListHeaderComponent, IgcListItemComponent, IgcRadioComponent, IgcRadioGroupComponent, IgcRangeSliderComponent, IgcRatingComponent, IgcRippleComponent, IgcSelectComponent, IgcSliderComponent, IgcSnackbarComponent, IgcStepperComponent, IgcSwitchComponent, IgcTabsComponent, IgcTextareaComponent, IgcToggleButtonComponent, IgcTreeComponent } from 'igniteui-webcomponents';
 import '@infragistics/igniteui-webcomponents-grids/grids/combined.js';
-import { EmployeesType } from '../models/Northwind/employees-type';
 import { BoxOfficeRevenueType } from '../models/Financial/box-office-revenue-type';
+import { EmployeesType } from '../models/Northwind/employees-type';
 import { financialService } from '../services/Financial-service';
 import { northwindService } from '../services/Northwind-service';
 
