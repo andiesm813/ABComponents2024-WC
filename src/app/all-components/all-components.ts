@@ -4,8 +4,8 @@ import { IgcCategoryChartModule } from '@infragistics/igniteui-webcomponents-cha
 import { ModuleManager } from '@infragistics/igniteui-webcomponents-core';
 import { defineComponents, IgcAccordionComponent, IgcAvatarComponent, IgcBadgeComponent, IgcButtonComponent, IgcButtonGroupComponent, IgcCalendarComponent, IgcCardComponent, IgcCheckboxComponent, IgcComboComponent, IgcDialogComponent, IgcExpansionPanelComponent, IgcIconButtonComponent, IgcIconComponent, IgcInputComponent, IgcListComponent, IgcListHeaderComponent, IgcListItemComponent, IgcRadioComponent, IgcRadioGroupComponent, IgcRangeSliderComponent, IgcRatingComponent, IgcRippleComponent, IgcSelectComponent, IgcSliderComponent, IgcSnackbarComponent, IgcStepperComponent, IgcSwitchComponent, IgcTabsComponent, IgcTextareaComponent, IgcToggleButtonComponent, IgcTreeComponent } from 'igniteui-webcomponents';
 import '@infragistics/igniteui-webcomponents-grids/grids/combined.js';
-import { BoxOfficeRevenueType } from '../models/Financial/box-office-revenue-type';
 import { EmployeesType } from '../models/Northwind/employees-type';
+import { BoxOfficeRevenueType } from '../models/Financial/box-office-revenue-type';
 import { financialService } from '../services/Financial-service';
 import { northwindService } from '../services/Northwind-service';
 
@@ -31,7 +31,7 @@ export default class AllComponents extends LitElement {
     .group {
       justify-content: flex-start;
       align-items: stretch;
-      align-content: flex-start;
+      align-content: stretch;
       gap: 24px;
       overflow: auto;
       position: relative;
@@ -51,7 +51,7 @@ export default class AllComponents extends LitElement {
       align-content: flex-start;
       gap: 24px;
       position: relative;
-      min-width: 400px;
+      min-width: 320px;
       min-height: 50px;
       flex-grow: 1;
       flex-basis: 0;
@@ -106,7 +106,7 @@ export default class AllComponents extends LitElement {
       gap: 16px;
       overflow: auto;
       position: relative;
-      min-width: 50px;
+      min-width: 320px;
       min-height: 50px;
       flex-grow: 1;
       flex-basis: 0;
@@ -185,7 +185,7 @@ export default class AllComponents extends LitElement {
       align-content: flex-start;
       gap: 16px;
       position: relative;
-      min-width: 50px;
+      min-width: 240px;
       min-height: 50px;
       flex-grow: 1;
       flex-basis: 0;
@@ -376,6 +376,18 @@ export default class AllComponents extends LitElement {
     .avatar_4::part(base) {
       background-color: transparent;
     }
+    .avatar_5::part(base) {
+      background-color: transparent;
+    }
+    .avatar_6::part(base) {
+      background-color: transparent;
+    }
+    .avatar_7::part(base) {
+      background-color: transparent;
+    }
+    .avatar_8::part(base) {
+      background-color: transparent;
+    }
     .list {
       height: max-content;
     }
@@ -532,20 +544,28 @@ export default class AllComponents extends LitElement {
                   </span>
                 </igc-list-item>
                 <igc-list-item>
-                  <igc-avatar slot="start" shape="circle">
-                    <span class="material-icons">
-                      person
-                    </span>
-                  </igc-avatar>
-                  <div slot="title">Default with Subtitle and Avatar</div>
+                  <igc-avatar src="/src/assets/d4c387693b4db8c8354a14897762a46dcf820844.png" slot="start" shape="circle" class="avatar_1"></igc-avatar>
+                  <div slot="title">Image asset</div>
                   <div slot="subtitle">Subtitle...</div>
                   <span slot="end" class="material-icons icon">
                     keyboard_arrow_right
                   </span>
                 </igc-list-item>
                 <igc-list-item>
-                  <igc-avatar src="/src/assets/d4c387693b4db8c8354a14897762a46dcf820844.png" slot="start" shape="circle" class="avatar_1"></igc-avatar>
-                  <div slot="title">Image Avatar</div>
+                  <igc-avatar src="https://images.unsplash.com/photo-1638643391904-9b551ba91eaa?q=80&amp;w=2592&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" slot="start" shape="circle" class="avatar_2"></igc-avatar>
+                  <div slot="title">Image URL</div>
+                  <div slot="subtitle">Subtitle...</div>
+                  <span slot="end" class="material-icons icon">
+                    keyboard_arrow_right
+                  </span>
+                </igc-list-item>
+                <igc-list-item>
+                  <igc-avatar slot="start" shape="circle">
+                    <span class="material-icons">
+                      person
+                    </span>
+                  </igc-avatar>
+                  <div slot="title">Default with Subtitle and Avatar</div>
                   <div slot="subtitle">Subtitle...</div>
                   <span slot="end" class="material-icons icon">
                     keyboard_arrow_right
@@ -1054,12 +1074,15 @@ export default class AllComponents extends LitElement {
                 people
               </span>
             </igc-avatar>
-            <igc-avatar initials="AB" shape="rounded" size="large"></igc-avatar>
-            <igc-avatar initials="AB" shape="rounded" size="medium"></igc-avatar>
-            <igc-avatar initials="AB" shape="rounded"></igc-avatar>
-            <igc-avatar src="/src/assets/a7f211be67afc061d9571f5b5b5236cd92420e0c.png" shape="rounded" size="large" class="avatar_2"></igc-avatar>
-            <igc-avatar src="/src/assets/a7f211be67afc061d9571f5b5b5236cd92420e0c.png" shape="rounded" size="medium" class="avatar_3"></igc-avatar>
-            <igc-avatar src="/src/assets/a7f211be67afc061d9571f5b5b5236cd92420e0c.png" shape="rounded" class="avatar_4"></igc-avatar>
+            <igc-avatar initials="AB" size="large"></igc-avatar>
+            <igc-avatar initials="AB" size="medium"></igc-avatar>
+            <igc-avatar initials="AB"></igc-avatar>
+            <igc-avatar src="/src/assets/a7f211be67afc061d9571f5b5b5236cd92420e0c.png" shape="rounded" size="large" class="avatar_3"></igc-avatar>
+            <igc-avatar src="/src/assets/a7f211be67afc061d9571f5b5b5236cd92420e0c.png" shape="rounded" size="medium" class="avatar_4"></igc-avatar>
+            <igc-avatar src="/src/assets/a7f211be67afc061d9571f5b5b5236cd92420e0c.png" shape="rounded" class="avatar_5"></igc-avatar>
+            <igc-avatar src="https://images.unsplash.com/photo-1638643391904-9b551ba91eaa?q=80&amp;w=2592&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" shape="rounded" size="large" class="avatar_6"></igc-avatar>
+            <igc-avatar src="https://images.unsplash.com/photo-1638643391904-9b551ba91eaa?q=80&amp;w=2592&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" shape="rounded" size="medium" class="avatar_7"></igc-avatar>
+            <igc-avatar src="https://images.unsplash.com/photo-1638643391904-9b551ba91eaa?q=80&amp;w=2592&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" shape="rounded" class="avatar_8"></igc-avatar>
           </div>
         </div>
         <div class="column-layout group_14">
