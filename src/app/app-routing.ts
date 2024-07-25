@@ -4,6 +4,7 @@ import './all-components/all-components';
 import './avatars-images/avatars-images';
 import './calendar/calendar';
 import './forms/forms';
+import './lists/lists';
 import './radiogroup/radiogroup';
 import './stepper/stepper';
 
@@ -13,6 +14,7 @@ export const routes: Route[] = [
   { path: 'avatars-images', component: 'app-avatars-images', name: 'Avatars-Images' },
   { path: 'calendar', component: 'app-calendar', name: 'Calendar' },
   { path: 'forms', component: 'app-forms', name: 'Forms' },
+  { path: 'lists', component: 'app-lists', name: 'Lists' },
   { path: 'radiogroup', component: 'app-radiogroup', name: 'Radiogroup' },
   { path: 'stepper', component: 'app-stepper', name: 'Stepper' },
   // The fallback route should always be after other alternatives.
