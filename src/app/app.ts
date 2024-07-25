@@ -145,7 +145,7 @@ export default class App extends LitElement {
             </span>
             <div slot="content">Forms</div>
           </igc-nav-drawer-item>
-          <igc-nav-drawer-item @click="${() => Router.go(`/forms`)}">
+          <igc-nav-drawer-item @click="${() => Router.go(`/lists`)}">
             <span slot="icon">
               <span class="material-icons icon">
                 view_list
