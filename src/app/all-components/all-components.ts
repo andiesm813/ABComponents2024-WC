@@ -4,8 +4,8 @@ import { IgcCategoryChartModule } from '@infragistics/igniteui-webcomponents-cha
 import { ModuleManager } from '@infragistics/igniteui-webcomponents-core';
 import { defineComponents, IgcAccordionComponent, IgcAvatarComponent, IgcBadgeComponent, IgcButtonComponent, IgcButtonGroupComponent, IgcCalendarComponent, IgcCardComponent, IgcCheckboxComponent, IgcComboComponent, IgcDialogComponent, IgcExpansionPanelComponent, IgcIconButtonComponent, IgcIconComponent, IgcInputComponent, IgcListComponent, IgcListHeaderComponent, IgcListItemComponent, IgcRadioComponent, IgcRadioGroupComponent, IgcRangeSliderComponent, IgcRatingComponent, IgcRippleComponent, IgcSelectComponent, IgcSliderComponent, IgcSnackbarComponent, IgcStepperComponent, IgcSwitchComponent, IgcTabsComponent, IgcTextareaComponent, IgcToggleButtonComponent, IgcTreeComponent } from 'igniteui-webcomponents';
 import '@infragistics/igniteui-webcomponents-grids/grids/combined.js';
-import { BoxOfficeRevenueType } from '../models/Financial/box-office-revenue-type';
 import { EmployeesType } from '../models/Northwind/employees-type';
+import { BoxOfficeRevenueType } from '../models/Financial/box-office-revenue-type';
 import { financialService } from '../services/Financial-service';
 import { northwindService } from '../services/Northwind-service';
 
@@ -33,7 +33,6 @@ export default class AllComponents extends LitElement {
       align-items: stretch;
       align-content: stretch;
       gap: 24px;
-      overflow: auto;
       position: relative;
       padding: 20px;
       min-width: 50px;
@@ -694,7 +693,7 @@ export default class AllComponents extends LitElement {
                     </h5>
                   </igc-card-header>
                   <igc-card-content class="body-content">
-                    <p class="typography__body-1 text">
+                    <p class="typography__body-2 text">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                     </p>
                   </igc-card-content>
@@ -765,7 +764,7 @@ export default class AllComponents extends LitElement {
                     </igc-card-header>
                   </div>
                   <igc-card-content class="body-content">
-                    <p class="typography__body-1 text">
+                    <p class="typography__body-2 text">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                     </p>
                   </igc-card-content>
@@ -1128,6 +1127,7 @@ export default class AllComponents extends LitElement {
             </igc-select-item>
           </igc-select>
           <igc-combo .data="${this.financialBoxOfficeRevenue}" label="Combo" placeholder="Placeholder" display-key="Franchise" ?outlined="${false}" ?single-select="${true}" class="user-input"></igc-combo>
+          <igc-input label="Label" ?outlined="${true}" class="user-input"></igc-input>
         </div>
         <div class="column-layout group_15">
           <igc-calendar ?hide-header="${false}" header-orientation="horizontal" class="calendar"></igc-calendar>
