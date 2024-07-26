@@ -32,12 +32,16 @@ export default class Cards extends LitElement {
       flex-basis: 0;
     }
     .card {
+      width: 400px;
       height: max-content;
       min-width: 320px;
+      max-width: 400px;
     }
     .card_1 {
+      width: 400px;
       height: max-content;
       min-width: 320px;
+      max-width: 400px;
       flex-direction: row;
     }
     .group_1 {
