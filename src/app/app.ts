@@ -136,6 +136,24 @@ export default class App extends LitElement {
             </span>
             <div slot="content">Calendar</div>
           </igc-nav-drawer-item>
+          <igc-nav-drawer-item @click="${() => Router.go(`/cards`)}">
+            <span slot="icon">
+              <span class="material-icons icon">
+                dashboard
+              </span>
+              <igc-ripple></igc-ripple>
+            </span>
+            <div slot="content">Cards</div>
+          </igc-nav-drawer-item>
+          <igc-nav-drawer-item @click="${() => Router.go(`/charts`)}">
+            <span slot="icon">
+              <span class="material-icons icon">
+                insert_chart
+              </span>
+              <igc-ripple></igc-ripple>
+            </span>
+            <div slot="content">Charts</div>
+          </igc-nav-drawer-item>
           <igc-nav-drawer-item @click="${() => Router.go(`/forms`)}">
             <span slot="icon">
               <span class="material-icons icon">
@@ -153,6 +171,15 @@ export default class App extends LitElement {
               <igc-ripple></igc-ripple>
             </span>
             <div slot="content">Lists</div>
+          </igc-nav-drawer-item>
+          <igc-nav-drawer-item @click="${() => Router.go(`/mouse-events`)}">
+            <span slot="icon">
+              <span class="material-icons icon">
+                ads_click
+              </span>
+              <igc-ripple></igc-ripple>
+            </span>
+            <div slot="content">Mouse Events</div>
           </igc-nav-drawer-item>
           <igc-nav-drawer-item @click="${() => Router.go(`/radiogroup`)}">
             <span slot="icon">
